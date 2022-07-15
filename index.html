@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="images/logo.png" height="60" width="65"></a>
+        <div class="menutoggle" onclick="togglemenu();"></div>
+        <ul class="nav">
+            <li><a href="#banner">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#menu">MENU</a></li>
+            <li><a href="#project">PROJECT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </header>
+    <section class="banner" class="container" id="banner">
+        <div class="content"> 
+            <h2><span class="dr" class="text-center">D</span>ARK<span class="dr">R</span>OOM</h2>
+            <h3>STUDIO</h3>
+            <P>passion is like more exeptions</P>
+                <a href="#" class="btn">OUR MENU</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="row">
+            <div class="cols">
+                <h2 class="title1"><SPAN>A</SPAN>BOUT</h2>
+                <p>we inspire,entertain,persuade and innovate.we are the darkroom studio.we first create the tiktok videos,instgram reels.then we changed ponline</p>
+            </div>
+        <div class="cols">
+            <div class="imgbox">
+                <img src="images/logo.png">
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section class="menu" id="menu">
+        <div class="title">
+            <h2 class="title1"><span>O</span>UR MEMBERS</h2>
+        </div>
+        <div class="content">
+            <div class="box">
+
+                <div class="imgbox">
+                    <img src="images/img1.jpg">
+                </div>
+                <div class="name">
+                    <h3>RASHAD</h3>
+                </div>
+
+                <div class="imgbox">
+                    <img src="images/img2.jpg" >
+                </div>
+                <div class="name">
+                    <h3>BIJESH</h3>
+                </div>
+
+
+                <div class="imgbox">
+                    <img src="images/img3.jpg">
+                </div>
+
+                <div class="name">
+                    <h3>SHYAMLAL</h3>
+                </div>
+
+                <div class="imgbox">
+                    <img src="images/Img4.jpg">
+                </div>
+                <div class="name">
+                    <h3>VIPIN</h3>
+                </div>
+
+
+                <div class="imgbox">
+                    <img src="images/img5.jpg">
+                </div>
+                <div class="name">
+                    <h3>BINESH</h3>
+                </div>
+
+                <div class="imgbox">
+                    <img src="images/Img6.jpg">
+                </div>
+                <div class="name">
+                    <h3>VISHAK</h3>
+                </div>
+
+                <div class="imgbox">
+                    <img src="images/img7.jpg">
+                </div>
+                <div class="name">
+                    <h3>RABI</h3>
+                </div>
+
+                <div class="imgbox">
+                    <img src="images/img8.jpg">
+                </div>
+                <div class="name">
+                    <h3>AJMAL</h3>
+                </div>
+
+                <div class="imgbox">
+                    <img src="images/img9.jpg">
+                </div>
+                <div class="name">
+                    <h3>AMAL</h3>
+                </div>
+
+                <div class="imgbox">
+                    <img src="images/img10.jpg">
+                </div>
+                <div class="name">
+                    <h3>SHIBILI</h3>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="project" id="project">
+        
+        <div class="row">
+            <div class="cols">
+                <div class="imgbox">
+                <img src="images/project.jpg">
+                </div>
+            </div>
+            <div class="cols">
+                <h2 class="title1"><SPAN>P</SPAN>ROJECT</h2>
+                <p>hdfhwefefgerhfgrejfweriuofwfufuhuhgrerguerguhwrfgurwfwrgrghrog</p>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="title">
+         
+                <h2 class="title1"><SPAN>C</SPAN>ONTACT</h2>
+                <!-- <p>hdfhwefefgerhfgrejfweriuofwfufuhuhgrerguerguhwrfgurwfwrgrghrog</p> -->
+            </div>
+        <div class="contactform">
+            <h3>send message</h3>
+            <div class="inputbox">
+                <input type="text" placeholder="name">
+            </div>
+            <div class="inputbox">
+                <input type="text" placeholder="email">
+            </div>
+            <div class="inputbox">
+                <textarea placeholder="name"></textarea>
+            </div>    
+            <div class="inputbox">
+                <input type="submit" value="send">
+            </div>
+        </div>
+        
+    </section>
+
+    <div class="copyrightText">
+        <p>copyright 2022<a href="#" >binesh</a>.All right Reserved</p>
+    </div>
+    
+
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+    const header = document.querySelector('header');
+    header.classList.toggle("sticky",window.scrolly > 0);
+});
+
+    function togglemenu()
+    {
+        const menutoggle = document.querySelector('.menutoggle');
+        const nav = document.querySelector('.nav');
+        menutoggle.classList.toggle('active');
+        nav.classList.toggle('active');
+    }
+    </script>
+    
+</body>
